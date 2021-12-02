@@ -1,5 +1,5 @@
-const fs = require('fs');
-const input = fs.readFileSync('../inputs/01.txt', 'utf-8').split('\n');
+const prIn = require('../processInput');
+const input = prIn.processInput(1);
 
 // Part 1
 const answer1 = input.filter((measurement, i) => +measurement < +input[i + 1]).length;
