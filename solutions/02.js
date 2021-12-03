@@ -1,7 +1,5 @@
-const di = require('../downloadInput');
-const prIn = require('../processInput');
-di.downloadInput(2);
-const input = prIn.processInput(2);
+const pInp = require('../processInput');
+const input = pInp.process(2);
 
 // Part 1
 let h = 0;
